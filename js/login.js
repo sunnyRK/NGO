@@ -4,7 +4,7 @@ function login()
 		var pass=document.getElementById("password").value;
 
 		$.post('../php/loginpage.php',{user:user,pass:pass},function(data){
-			if(data.localeCompare("available")){
+			if(data=="available"){
 				alert("verified");
 			}
 			else{
@@ -12,3 +12,4 @@ function login()
 			}
 		}); 
 }
+
