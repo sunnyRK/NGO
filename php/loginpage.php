@@ -15,12 +15,12 @@
 				}
 				else
 				{
-					echo "wrong";
+					echo "wrong password";
 				}		
 			}	
 		}
 		else
 		{
-			echo "no data";
+			echo "data not available";
 		}
 ?>
