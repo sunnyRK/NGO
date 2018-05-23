@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2018 at 05:15 AM
+-- Generation Time: May 23, 2018 at 09:06 AM
 -- Server version: 5.6.26-log
 -- PHP Version: 5.6.12
 
@@ -19,6 +19,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `ngo`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event_request`
+--
+
+CREATE TABLE IF NOT EXISTS `event_request` (
+  `name` varchar(50) NOT NULL,
+  `contactno` int(15) NOT NULL,
+  `emailid` varchar(50) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `eventcategory` varchar(50) NOT NULL,
+  `eventinfo` varchar(700) NOT NULL,
+  `volunterscount` int(10) NOT NULL,
+  `eventdatefrom` int(50) NOT NULL,
+  `eventdateto` int(50) NOT NULL,
+  `extrareq` varchar(700) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
