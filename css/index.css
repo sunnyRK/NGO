@@ -1,0 +1,36 @@
+.title_div
+{
+	width: 100%;
+	text-align: left;
+	margin: 2%;
+}
+nav
+{
+	background-color: #4ecd66;
+}
+.logo
+{
+	height: 100%;
+	margin-left: 2%;
+	/*padding: 10%;*/
+	width: auto;
+	display: inline-block;
+}
+.title_name
+{
+	display: inline-block;
+	position: absolute;
+	margin-left: 0%;
+}
+.brand-logo
+{
+	padding-left: 10px !important;
+}
+.modal .modal-content
+{
+	padding: 0% !important;
+}
+.row
+{
+	margin-bottom: 0% !important;
+}
