@@ -43,8 +43,8 @@
         <h3 class="en">Aadhar no.  
         </h3><input type="text" name="aadhar" id="aadhar"class="tbox1"placeholder="Enter Aadhar" />
         
-        <h3 class="en">Upload Image  
-        </h3><input type="file" name="image" id="image"class="tbox1"placeholder="Upload Image" />
+        <h3 class="en">Upload Image</h3>
+        <input type="file" id="photo" class="tbox1"><br/>
         
         <h3 class="en">Area Of Intrest
         </h3><input type="Areaofintrest" name="intrest" id="intrest" class="tbox1"placeholder="Enter Area of Intrest" />
@@ -61,5 +61,38 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous">
       --></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(document).on('change','#photo',function(){
+        var user=document.getElementById("username").value;
+        var property = document.getElementById('photo').files[0];
+        var image_name = property.name;
+        var image_extension = image_name.split('.').pop().toLowerCase();
+
+        if(jQuery.inArray(image_extension,['png','jpg','jpeg','']) == -1){
+          alert("Invalid image file");
+        }
+
+        var form_data = new FormData();
+        form_data.append("file",property);
+        form_data.append("user",user);
+        $.ajax({
+          url:'upload.php',
+          method:'POST',
+          data:form_data,
+          contentType:false,
+          cache:false,
+          processData:false,
+          beforeSend:function(){
+          },
+          success:function(data){
+            console.log(data);
+          
+          }
+        });
+      });
+    });
+  </script>
     </body>
 </html>
