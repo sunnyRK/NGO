@@ -11,85 +11,78 @@
     </head>
 
     <body>
-
-    	<!-- <div class="title_div hide-on-med-and-down">
-    		<img src="images/logo.jpeg" class="logo">
-    		<h4 class="title_name">Kartvya</h4>
-    	</div>
- -->
-    	 <!-- <div class="navbar-fixed"> -->
-		    <nav>
-			    <div class="nav-wrapper">
-			    	<img src="images/logo.jpeg" class="logo">
-    				<h4 class="brand-logo">Kartvya</h4>
-			      <!-- <a href="#!" class="brand-logo hide-on-large-only" >Kartvya</a> -->
-			      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-			      <ul class="right hide-on-med-and-down">
-			        <li><a href="#login" class="modal-trigger">Login</a></li>
-			        <li><a href="#signup" class="modal-trigger">Sign Up</a></li><!-- 
-			        <li><a href="collapsible.html">Javascript</a></li>
-			        <li><a href="mobile.html">Mobile</a></li> -->
-			      </ul>
-			    </div>
-			  </nav>
-
-			  <ul class="sidenav" id="mobile-demo">
+		<nav>
+			<div class="nav-wrapper">
+			    <img src="images/logo.jpeg" class="logo">
+    			<h4 class="brand-logo">Kartvya</h4>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			    <ul class="right hide-on-med-and-down">
+			     	<li><a href="#login" class="modal-trigger">Login</a></li>
+			        <li><a href="#signup" class="modal-trigger">Sign Up</a></li>
+			    </ul>
+			</div>
+		</nav>
+			<ul class="sidenav" id="mobile-demo">
 			    <li><a href="#login" class="modal-trigger" onclick="hide_bar()">Login</a></li>
-			    <li><a href="#signup" class="modal-trigger" onclick="hide_bar()">Sign Up</a></li><!-- 
-			    <li><a href="collapsible.html">Javascript</a></li>
-			    <li><a href="mobile.html">Mobile</a></li> -->
-			  </ul>
-		  <!-- </div> -->
-		  <!-- Login and signup -->
-		 
+			    <li><a href="#signup" class="modal-trigger" onclick="hide_bar()">Sign Up</a></li>
+			</ul>
 		  <!-- Modal Structure -->
-		  <div id="login" class="modal ">
+		<div id="login" class="modal ">
 		    <div class="modal-content">
-		    	<div class="">
 		        <div class="row white">
 		    		<div class="col s6 " style="background-color: #57ce6d;height: 360px">
 		    			<img src="images/logo.jpeg" style="width: 60%;margin : 20%;margin-bottom: 0%">
 		    			<h4 style="text-align: center;color: #FFF">Kartvya</h4>
 		    		</div>
-
-					    <form class="col s6" style="background-color: #FFF;padding: 20px">
-		      <h4 style="color: #57ce6d;">Login</h4>
-
-					      <div class="row">
-					        <div class="input-field col s12">
+					<form class="col s6" style="background-color: #FFF;padding: 20px">
+		      			<h4 style="color: #57ce6d;">Login</h4>
+					    <div class="row">
+					       <div class="input-field col s12">
 					          <input placeholder="UserName" id="first_name" type="text" class="validate">
-					          <!-- <label for="first_name">UserName</label> -->
-					        </div>
-					    </div>
-					   <div class="row">
-					    <!-- <div class="row"> -->
-				        <div class="input-field col s12">
-				          <input placeholder="Password" id="password" type="password" class="validate">
-				          <!-- <label for="password">Password</label> -->
-				        </div>
-				      </div>
-				      <a class="waves-effect waves-light btn" style="background-color: #57ce6d">Login</a>
+					    	</div>
+				        	<div class="input-field col s12">
+				          		<input placeholder="Password" id="password" type="password" class="validate">
+				        	</div>
+				      	</div>
+				      	<a class="waves-effect waves-light btn" style="background-color: #57ce6d">Login</a>
 					</form>
-					</div>
 				</div>
 		    </div>
-		    <!-- </div> -->
-		    <!-- <div class="modal-footer">
-		      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-		    </div> -->
-		  </div>
+		</div>
+
 		  <!-- Modal Structure -->
-		  <div id="signup" class="modal modal-fixed-footer">
+		<div id="signup" class="modal">
 		    <div class="modal-content">
-		      <h4 class="align-center">Sign Up</h4>
-		      <p>A bunch of text</p>
+		       <div class="row white">
+		    		<div class="col s6 " style="background-color: #57ce6d;height: 360px">
+		    			<img src="images/logo.jpeg" style="width: 60%;margin : 20%;margin-bottom: 0%">
+		    			<h4 style="text-align: center;color: #FFF">Kartvya</h4>
+		    		</div>
+					<form class="col s6" style="background-color: #FFF;padding: 20px">
+		      			<h4 style="color: #57ce6d;">Register</h4>
+					    <div class="row">
+					       <div class="login col s10">
+					        <input type="text" name="username" id="username" class="tbox1" placeholder="Enter Username" />
+					        <input type="password" name="password" id="password" class="tbox1" placeholder="Enter Password" />
+					        <input type="text" name="cpassword" id="cpassword" class="tbox1" placeholder="Enter Password" />
+					        <input type="text" name="name" id="name" class="tbox1" placeholder="Enter Name" />
+					        <input type="text" name="contact" id="contact" class="tbox1" placeholder="Enter Contact no." />
+					        <input type="text" name="email" id="email" class="tbox1" placeholder="Enter Email" />
+					        <input type="textarea" name="Address" id="address" class="tbox1" placeholder="Enter address" />
+					        <input type="text" name="city" id="city" class="tbox1" placeholder="Enter City" />
+					        <input type="text" name="state" id="state" class="tbox1" placeholder="Enter State" />
+					        <input type="text" name="pin" id="pin" class="tbox1" placeholder="Enter Pincode" />
+					        <input type="text" name="country" id="country" class="tbox1" placeholder="Enter Country" />
+					        <input type="text" name="aadhar" id="aadhar" class="tbox1" placeholder="Enter Aadhar" />
+					        <input type="file" name="image" id="image" class="tbox1" placeholder="Upload Image" />
+					        <input type="Areaofintrest" name="intrest" id="intrest" class="tbox1" placeholder="Enter Area of Intrest" />
+    						</div>
+				      	</div>
+				      <a class="waves-effect waves-light btn" style="background-color: #57ce6d" onclick="register()">Register</a>
+					</form>
+				</div>
 		    </div>
-		    <div class="modal-footer">
-		      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-		    </div>
-		  </div>
-
-
+		 </div>
       <!--JavaScript at end of body for optimized loading-->
      <script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -99,5 +92,5 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
      <script type="text/javascript" src="js/init_mat.js"></script>
      <script type="text/javascript" src="js/index.js"></script>
-    </body>
+    </body> 
 </html>
