@@ -65,16 +65,18 @@
     <script type="text/javascript">
     $(document).ready(function(){
       $(document).on('change','#photo',function(){
+        var user=document.getElementById("username").value;
         var property = document.getElementById('photo').files[0];
         var image_name = property.name;
         var image_extension = image_name.split('.').pop().toLowerCase();
 
-        if(jQuery.inArray(image_extension,['gif','jpg','jpeg','']) == -1){
+        if(jQuery.inArray(image_extension,['png','jpg','jpeg','']) == -1){
           alert("Invalid image file");
         }
 
         var form_data = new FormData();
         form_data.append("file",property);
+        form_data.append("user",user);
         $.ajax({
           url:'upload.php',
           method:'POST',
@@ -83,7 +85,6 @@
           cache:false,
           processData:false,
           beforeSend:function(){
-          
           },
           success:function(data){
             console.log(data);
@@ -93,8 +94,5 @@
       });
     });
   </script>
-
-    
-
     </body>
 </html>
