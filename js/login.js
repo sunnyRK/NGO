@@ -15,8 +15,8 @@ function login()
 
 function register()
 {
-		var user=document.getElementById("username").value;
-		var pass=document.getElementById("password").value;
+		var user=document.getElementById("username1").value;
+		var pass=document.getElementById("password1").value;
 		var cpass=document.getElementById("cpassword").value;
 		var name=document.getElementById("name").value;
 		var contact=document.getElementById("contact").value;
