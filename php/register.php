@@ -1,5 +1,6 @@
 <?php
 	include("connect.php");
+	
 	$user=$_POST['user'];
 	$pass=$_POST['pass'];
 	$cpass=$_POST['cpass'];
@@ -12,9 +13,17 @@
 	$pin=$_POST['pin'];
 	$country=$_POST['country'];
 	$aadhar=$_POST['aadhar'];
-	//$pass=$_POST['image'];
+	//$image=$_POST['image'];
 	$intrest=$_POST['intrest'];
-	$status_get=mysqli_query($con,"INSERT INTO `users` (`id`, `username`, `password`, `name`, `contact`, `email`, `address`, `pin`, `city`, `state`, `country`, `aadhar`, `image`, `AreaOfIntrest`) VALUES (NULL, '$user', '$pass', '$name', '$contact', '$email', '$address', '$pin', '$city', '$state', '$country', '$aadhar', 'pavan.png', '$intrest');");
+
+	$img = $user.'jpg';
+
+
+	//$filename = $_FIlES['file']['name'];
+
+
+
+	$status_get=mysqli_query($con,"INSERT INTO `users` (`id`, `username`, `password`, `name`, `contact`, `email`, `address`, `pin`, `city`, `state`, `country`, `aadhar`, `image`, `AreaOfIntrest`) VALUES (NULL, '$user', '$pass', '$name', '$contact', '$email', '$address', '$pin', '$city', '$state', '$country', '$aadhar', '$img', '$intrest');");
 
 				if($status_get)
 				{
