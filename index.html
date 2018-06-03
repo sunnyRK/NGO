@@ -11,53 +11,43 @@
     </head>
 
     <body>
-
-    	<!-- <div class="title_div hide-on-med-and-down">
-    		<img src="images/logo.jpeg" class="logo">
-    		<h4 class="title_name">Kartvya</h4>
-    	</div>
- -->
-    	 <!-- <div class="navbar-fixed"> -->
-		    <nav>
-			    <div class="nav-wrapper">
-			    	<img src="images/logo.jpeg" class="logo">
-    				<h4 class="brand-logo">Kartvya</h4>
-			      <!-- <a href="#!" class="brand-logo hide-on-large-only" >Kartvya</a> -->
-			      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-			      <ul class="right hide-on-med-and-down">
-			        <li><a href="#login" class="modal-trigger">Login</a></li>
-			        <li><a href="#signup" class="modal-trigger">Sign Up</a></li><!-- 
-			        <li><a href="collapsible.html">Javascript</a></li>
-			        <li><a href="mobile.html">Mobile</a></li> -->
-			      </ul>
-			    </div>
-			  </nav>
-
-			  <ul class="sidenav" id="mobile-demo">
-			    <li><a href="#login" class="modal-trigger" onclick="hide_bar()">Login</a></li>
-			    <li><a href="#signup" class="modal-trigger" onclick="hide_bar()">Sign Up</a></li><!-- 
-			    <li><a href="collapsible.html">Javascript</a></li>
-			    <li><a href="mobile.html">Mobile</a></li> -->
-			  </ul>
-		  <!-- </div> -->
-		  <!-- Login and signup -->
-		 
+		<nav>
+			<div class="nav-wrapper">
+			    <img src="images/logo.jpeg" class="logo brand-logo">
+    			<!-- <h4 class="brand-logo">Kartvya</h4> -->
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #4ecd66">menu</i></a>
+			    <ul class="right hide-on-med-and-down">
+			     	<li><a href="#home" class="modal-trigger selected	" >Home</a></li>
+			     	<li><a href="#about_us" class="modal-trigger">About Us</a></li>
+			     	<li><a href="#contact_us" class="modal-trigger">Contact Us</a></li>
+			     	<li><a href="#login" class="modal-trigger">Login</a></li>
+			        <li><a href="#signup" class="modal-trigger">Sign Up</a></li>
+			        <li><a href="#donate" class="modal-trigger">Donate Us</a></li>
+			    </ul>
+			</div>
+		</nav>
+			<ul class="sidenav" id="mobile-demo">
+			    <li><a href="#home" class="modal-trigger">Home</a></li>
+			     	<li><a href="#about_us" class="modal-trigger">About Us</a></li>
+			     	<li><a href="#contact_us" class="modal-trigger">Contact Us</a></li>
+			     	<li><a href="#login" class="modal-trigger">Login</a></li>
+			        <li><a href="#signup" class="modal-trigger">Sign Up</a></li>
+			        <li><a href="#donate" class="modal-trigger">Donate Us</a></li>
+			</ul>
 		  <!-- Modal Structure -->
-		  <div id="login" class="modal ">
+		<div id="login" class="modal ">
 		    <div class="modal-content">
-		    	<div class="">
 		        <div class="row white">
 		    		<div class="col s6 " style="background-color: #57ce6d;height: 360px">
 		    			<img src="images/logo.jpeg" style="width: 60%;margin : 20%;margin-bottom: 0%">
 		    			<h4 style="text-align: center;color: #FFF">Kartvya</h4>
 		    		</div>
-
-					    <form class="col s6" style="background-color: #FFF;padding: 20px">
-		      <h4 style="color: #57ce6d;">Login</h4>
-
-					      <div class="row">
-					        <div class="input-field col s12">
+					<form class="col s6" style="background-color: #FFF;padding: 20px">
+		      			<h4 style="color: #57ce6d;">Login</h4>
+					    <div class="row">
+					       <div class="input-field col s12">
 					          <input placeholder="UserName" id="username" type="text" class="validate">
+<<<<<<< HEAD
 					          <!-- <label for="first_name">UserName</label> -->
 					        </div>
 					    </div>
@@ -69,27 +59,231 @@
 				        </div>
 				      </div>
 				      <a class="waves-effect waves-light btn" style="background-color: #57ce6d">Login</a>
+=======
+					    	</div>
+				        	<div class="input-field col s12">
+				          		<input placeholder="Password" id="password" type="password" class="validate">
+				        	</div>
+				      	</div>
+				      	<a class="waves-effect waves-light btn" style="background-color: #57ce6d" onclick="login()">Login</a>
+>>>>>>> 769a2665b6095a17a7b071890976c68dd9b374d5
 					</form>
-					</div>
 				</div>
 		    </div>
-		    <!-- </div> -->
-		    <!-- <div class="modal-footer">
-		      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-		    </div> -->
-		  </div>
-		  <!-- Modal Structure -->
-		  <div id="signup" class="modal modal-fixed-footer">
-		    <div class="modal-content">
-		      <h4 class="align-center">Sign Up</h4>
-		      <p>A bunch of text</p>
-		    </div>
-		    <div class="modal-footer">
-		      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-		    </div>
-		  </div>
+		</div>
 
+		  <!-- Modal Structure -->
+		<div id="signup" class="modal modal-fixed-footer">
+		    <div class="modal-content">
+		       <div class="row white">
+		      			<h4 class="title_article">Welcome to Kartvya</h4>
+					<form class="col s6" style="background-color: #FFF;padding: 20px">
+		    			<input type="text" name="username" id="username1" class="tbox1" placeholder="Enter Username" />
+					        <input type="password" name="password" id="password1" class="tbox1" placeholder="Enter Password" />
+					        <input type="text" name="cpassword" id="cpassword" class="tbox1" placeholder="Enter Password" />
+					        <input type="text" name="name" id="name" class="tbox1" placeholder="Enter Name" />
+					        <input type="text" name="contact" id="contact" class="tbox1" placeholder="Enter Contact no." />
+					        <input type="text" name="email" id="email" class="tbox1" placeholder="Enter Email" />
+					        <input type="textarea" name="Address" id="address" class="tbox1" placeholder="Enter address" />
+		    		</form>
+					<form class="col s6" style="background-color: #FFF;padding: 20px">
+					    <div class="row">
+					       <div class="login col s10">
+					        <input type="text" name="city" id="city" class="tbox1" placeholder="Enter City" />
+					        <input type="text" name="state" id="state" class="tbox1" placeholder="Enter State" />
+					        <input type="text" name="pin" id="pin" class="tbox1" placeholder="Enter Pincode" />
+					        <input type="text" name="country" id="country" class="tbox1" placeholder="Enter Country" />
+					        <input type="text" name="aadhar" id="aadhar" class="tbox1" placeholder="Enter Aadhar" />
+					        <input type="file" name="image" id="image" class="tbox1" placeholder="Upload Image" />
+					        <input type="Areaofintrest" name="intrest" id="intrest" class="tbox1" placeholder="Enter Area of Intrest" />
+    						</div>
+				      	</div>
+					</form>
+				</div>
+		    </div>
+		     <div class="modal-footer">
+				      <a class="waves-effect waves-light btn" style="background-color: #57ce6d" onclick="register()">Register</a>
+		      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+		    </div>
+		 </div>
+
+<<<<<<< HEAD
 	 
+=======
+		<div class="row hide-on-med-and-down">
+			<div class="col s3 m3 card">
+				<h5 class="center-align title_article" >Upcoming Events</h5>
+				<div  class="marquee ver" data-direction='up' data-duration='7000' data-pauseOnHover="true" >
+					 <ul class="collection">
+					    <li class="collection-item avatar">
+					      <img src="images/logo_1.jpeg" alt="" class="circle">
+					      <span class="title">Blood Donation</span>
+					      <p>Near Inorbit Mall
+					      </p>
+					      <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle">folder</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle green">insert_chart</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle red">play_arrow</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					  </ul>
+				</div>
+			</div>
+			<div class="col s4 card">
+				Vision
+			</div>
+			<div class="col s3 card">
+				Video
+			</div>
+		</div>
+		<div class="row hide-on-large-only" >
+			<div class="col s11 white" style="margin-left:4.65%;margin-top: 1%">
+				Vision
+			</div>
+			<div class="col s11 white" style="margin-left:4.65%;margin-top: 1%">
+				Video
+			</div>
+			<div class="col s11 white" style="margin-left:4.65%;margin-top: 1%">
+				<h5 class="center-align title_article" >Upcoming Events</h5>
+				<div  class="marquee ver" data-direction='up' data-duration='7000' data-pauseOnHover="true" >
+					 <ul class="collection">
+					    <li class="collection-item avatar">
+					      <img src="images/logo_1.jpeg" alt="" class="circle">
+					      <span class="title">Blood Donation</span>
+					      <p>Near Inorbit Mall
+					      </p>
+					      <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle">folder</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle green">insert_chart</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle red">play_arrow</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					  </ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col s3 card hide-on-med-and-down">
+				<h5 class="center-align title_article" >Recent Activities</h5>
+				<div  class="marquee ver" data-direction='up' data-duration='7000' data-pauseOnHover="true" >
+					 <ul class="collection">
+					    <li class="collection-item avatar">
+					      <img src="images/logo_1.jpeg" alt="" class="circle">
+					      <span class="title">Blood Donation</span>
+					      <p>Near Inorbit Mall
+					      </p>
+					      <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle">folder</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle green">insert_chart</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle red">play_arrow</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					  </ul>
+				</div>
+			</div>
+			<div class="col s8 hide-on-med-and-down">Contact</div>
+			<div class="col s11 white hide-on-large-only" style="margin-left:4.65%;margin-top: 1%">
+				<h5 class="center-align title_article" >Recent Activities</h5>
+				<div  class="marquee ver" data-direction='up' data-duration='7000' data-pauseOnHover="true" >
+					 <ul class="collection">
+					    <li class="collection-item avatar">
+					      <img src="images/logo_1.jpeg" alt="" class="circle">
+					      <span class="title">Blood Donation</span>
+					      <p>Near Inorbit Mall
+					      </p>
+					      <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle">folder</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle green">insert_chart</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					    <li class="collection-item avatar">
+					      <i class="material-icons circle red">play_arrow</i>
+					      <span class="title">Title</span>
+					      <p>First Line <br>
+					         Second Line
+					      </p>
+					      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					    </li>
+					  </ul>
+				</div>
+			</div>
+			<div class="col s11 white hide-on-large-only" style="margin-left:4.65%;margin-top: 1%">Contact</div>
+		</div>
+>>>>>>> 769a2665b6095a17a7b071890976c68dd9b374d5
       <!--JavaScript at end of body for optimized loading-->
      <script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -99,5 +293,11 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
      <script type="text/javascript" src="js/init_mat.js"></script>
      <script type="text/javascript" src="js/index.js"></script>
-    </body>
+     <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
+     <script type="text/javascript">
+     	$('.marquee').marquee({
+     		duplicated: true
+     	});
+     </script>
+    </body> 
 </html>

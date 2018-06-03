@@ -2,8 +2,11 @@ function hide_bar()
 {
 	$('.sidenav').sidenav('close');
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 769a2665b6095a17a7b071890976c68dd9b374d5
 function login()
 {
 		var user=document.getElementById("username").value;
@@ -21,8 +24,13 @@ function login()
 
 function register()
 {
+<<<<<<< HEAD
 		var user=document.getElementById("username").value;
 		var pass=document.getElementById("password").value;
+=======
+		var user=document.getElementById("username1").value;
+		var pass=document.getElementById("password1").value;
+>>>>>>> 769a2665b6095a17a7b071890976c68dd9b374d5
 		var cpass=document.getElementById("cpassword").value;
 		var name=document.getElementById("name").value;
 		var contact=document.getElementById("contact").value;

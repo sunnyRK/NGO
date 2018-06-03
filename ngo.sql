@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2018 at 11:13 AM
+-- Generation Time: May 25, 2018 at 02:30 PM
 -- Server version: 5.6.26-log
 -- PHP Version: 5.6.12
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `event_request` (
   `eventtimefrom` varchar(20) NOT NULL,
   `eventtimeto` varchar(20) NOT NULL,
   `extrareq` varchar(700) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `event_request`
@@ -48,6 +48,26 @@ CREATE TABLE IF NOT EXISTS `event_request` (
 
 INSERT INTO `event_request` (`id`, `name`, `contactno`, `emailid`, `address`, `eventcategory`, `eventinfo`, `volunterscount`, `eventdatefrom`, `eventdateto`, `eventtimefrom`, `eventtimeto`, `extrareq`) VALUES
 (3, 'dhrumit', 2147483647, 'dhrumit8459', 'ndsjnja', 'dshvbdsh ', 'dbvhfvbfdj', 4, '7/9/2018', '10/9/2018', '1:00 AM', '2:00 PM', 'vndjd');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `upcoming_events`
+--
+
+CREATE TABLE IF NOT EXISTS `upcoming_events` (
+  `id` int(11) NOT NULL,
+  `eventid` varchar(20) NOT NULL,
+  `eventtitle` varchar(200) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `upcoming_events`
+--
+
+INSERT INTO `upcoming_events` (`id`, `eventid`, `eventtitle`) VALUES
+(2, 'e2o1', 'Educational Event'),
+(3, 'D321', 'Marathon');
 
 -- --------------------------------------------------------
 
@@ -90,6 +110,12 @@ ALTER TABLE `event_request`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `upcoming_events`
+--
+ALTER TABLE `upcoming_events`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -103,6 +129,11 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `event_request`
 --
 ALTER TABLE `event_request`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `upcoming_events`
+--
+ALTER TABLE `upcoming_events`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `users`
