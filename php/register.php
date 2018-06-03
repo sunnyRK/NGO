@@ -28,9 +28,16 @@
 		VALUES
 		 (NULL, '$user', '$pass', '$name', '$contact', '$email', '$address', '$pin', '$city', '$state', '$country', '$aadhar', '$img', '$intrest');");
 
-				if($status_get)
+/*
+					$to      = $email;
+					$subject = "The subject";
+					$message = "hello";
+					$headers = "From: ".$email;
+					mail($to, $subject, $message, $headers);
+*/				if($status_get)
 				{
 					echo "available";
+					
 				}
 				else
 				{

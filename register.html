@@ -51,10 +51,10 @@
         
         
         <br><br>
-        <input type="submit" onclick="register()" />
+        <input type="submit" onclick="register()"  />
     </div>
 
-      <script type="text/javascript" src="js/login.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -64,6 +64,32 @@
 
     <script type="text/javascript">
     $(document).ready(function(){
+
+      $(document).on('change','#username',function()
+      {
+          var user=document.getElementById("username").value;
+          $.post('check.php',{user:user,val:"username"},function(data){
+            if(data==0){
+              alert("available");
+            }
+            else{
+              alert("not available");
+            }
+         }); 
+      });
+
+     $(document).on('change','#email',function()
+      {
+          var user=document.getElementById("email").value;
+          $.post('check.php',{user:user,val:"email"},function(data){
+            if(data==0){
+              alert("available");
+            }
+            else{
+              alert("not available");
+            }
+         }); 
+      });
       $(document).on('change','#photo',function(){
         var user=document.getElementById("username").value;
         var property = document.getElementById('photo').files[0];

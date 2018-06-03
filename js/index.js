@@ -3,6 +3,7 @@ function hide_bar()
 	$('.sidenav').sidenav('close');
 }
 
+
 function login()
 {
 		var user=document.getElementById("username").value;
